@@ -1,0 +1,22 @@
+Configuration:
+  name: development
+  monitorInterval: 5
+  thresholdFilter:
+    level: trace
+  appenders:
+    Console:
+      name: stdout
+      PatternLayout:
+        Pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%5p} ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex"
+  Loggers:
+    logger:
+      -
+        name: com.dangdang.digital.redis
+        level: info
+        additivity: false
+        AppenderRef:
+          ref: stdout
+    Root:
+      level: error
+      AppenderRef:
+        ref: stdout

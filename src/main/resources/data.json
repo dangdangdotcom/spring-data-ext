@@ -1,0 +1,2001 @@
+[
+    {
+        "systemDate": 1522141884540,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "eventCalendar": [
+                "20180301"
+            ],
+            "custId": 180007406,
+            "signinInfo": "奥运有礼，每天最高送30铃铛（截止8/21）",
+            "nextTips": "今日签到积分+5，铃铛+5",
+            "signinCalendar": [
+                "20180122",
+                "20180202",
+                "20180208",
+                "20180321"
+            ],
+            "eventList": [
+                {
+                    "continueDays": 0,
+                    "desc": "3月份累积签到7天得50银铃铛",
+                    "from": "20180301",
+                    "fromDate": 1519833600000,
+                    "isRewardReady": 0,
+                    "missionId": 81,
+                    "title": "累积签到7天得50银铃铛",
+                    "to": "20180331",
+                    "toDate": 1522511999000,
+                    "today": 1,
+                    "totalDays": 7,
+                    "type": 2
+                },
+                {
+                    "continueDays": 0,
+                    "desc": "3月份累积签到14天得100银铃铛",
+                    "from": "20180301",
+                    "fromDate": 1519833600000,
+                    "isRewardReady": 0,
+                    "missionId": 82,
+                    "title": "累积签到14天得铃铛",
+                    "to": "20180331",
+                    "toDate": 1522511999000,
+                    "today": 1,
+                    "totalDays": 14,
+                    "type": 2
+                },
+                {
+                    "continueDays": 0,
+                    "desc": "3月份累积签到24天得150银铃铛+7天租阅权",
+                    "from": "20180301",
+                    "fromDate": 1519833600000,
+                    "isRewardReady": 0,
+                    "missionId": 83,
+                    "title": "累积签到24天得租阅权",
+                    "to": "20180331",
+                    "toDate": 1522511999000,
+                    "today": 1,
+                    "totalDays": 24,
+                    "type": 2
+                }
+            ],
+            "systemDate": "1522141884540",
+            "isSign": false,
+            "totalNum": 51228,
+            "bellPrize": 5,
+            "currentDate": "2018-03-27 17:11:24",
+            "continueDays": 1,
+            "scorePrize": 5,
+            "rewardCalendar": [
+                "20180402",
+                "20180409",
+                "20180419"
+            ]
+        }
+    },
+    {
+        "systemDate": 1522141884551,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522141884551",
+            "currentDate": "2018-03-27 17:11:24",
+            "userReadingTimeMinute": 0,
+            "userReadingTimeRank": "4%",
+            "userActivityCount": 2,
+            "userNoteCount": 0,
+            "userPostPublishCount": 2,
+            "userArticlePublishCount": 4,
+            "userStrategyPublishCount": 4,
+            "userPlanCount": 4
+        }
+    },
+    {
+        "systemDate": 1522142431864,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522142431865",
+            "currentDate": "2018-03-27 17:20:31",
+            "data": {
+                "topicList": [
+                    {
+                        "creationDate": 1515989805000,
+                        "displayName": "读客图书",
+                        "id": 10012,
+                        "isHot": "0",
+                        "lastModifiedDate": 1520416788000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "读客图书",
+                        "targetId": 7085,
+                        "topLevel": "1",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1518579584000,
+                        "displayName": "上海译文出版社",
+                        "id": 10043,
+                        "isHot": "0",
+                        "lastModifiedDate": 1518579596000,
+                        "lastModifiedUser": 127,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "上海译文出版社",
+                        "targetId": 10107,
+                        "topLevel": "1",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1517895560000,
+                        "displayName": "最好看的小说",
+                        "id": 10039,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517895608000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "最好看的小说",
+                        "targetId": 11,
+                        "topLevel": "1",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1516094440000,
+                        "displayName": "#第一本让你读了流泪的书#",
+                        "id": 10031,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517324211000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "#第一本让你读了流泪的书#",
+                        "targetId": 10,
+                        "topLevel": "1",
+                        "topicType": "0"
+                    },
+                    {
+                        "creationDate": 1520693459000,
+                        "displayName": "剑圣喵大师",
+                        "id": 10047,
+                        "isHot": "0",
+                        "lastModifiedDate": 1520693459000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "剑圣喵大师",
+                        "targetId": 7157,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1520473056000,
+                        "displayName": "樊登读书会",
+                        "id": 10046,
+                        "isHot": "0",
+                        "lastModifiedDate": 1520473056000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "樊登读书会",
+                        "targetId": 10996,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1519711148000,
+                        "displayName": "书单部落",
+                        "id": 10044,
+                        "isHot": "0",
+                        "lastModifiedDate": 1520045129000,
+                        "lastModifiedUser": 317,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "书单部落",
+                        "targetId": 21,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1519713686000,
+                        "displayName": "#经典咏流传#",
+                        "id": 10045,
+                        "isHot": "0",
+                        "lastModifiedDate": 1520045107000,
+                        "lastModifiedUser": 317,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "#经典咏流传#",
+                        "targetId": 2076,
+                        "topLevel": "0",
+                        "topicType": "0"
+                    },
+                    {
+                        "creationDate": 1517895725000,
+                        "displayName": "安意如",
+                        "id": 10041,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517895725000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "安意如",
+                        "targetId": 355,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1517895600000,
+                        "displayName": "混子曰",
+                        "id": 10040,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517895600000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "混子曰",
+                        "targetId": 11501,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1517885917000,
+                        "displayName": "美读文化",
+                        "id": 10038,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517885917000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "美读文化",
+                        "targetId": 11765,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1517324513000,
+                        "displayName": "一周一本书",
+                        "id": 10035,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517324513000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "一周一本书",
+                        "targetId": 70,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1515989953000,
+                        "displayName": "竹石图书",
+                        "id": 10021,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517324232000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "竹石图书",
+                        "targetId": 11522,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1517324074000,
+                        "displayName": "果麦文化",
+                        "id": 10033,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517324074000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "果麦文化",
+                        "targetId": 11594,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1517324036000,
+                        "displayName": "南有先生",
+                        "id": 10032,
+                        "isHot": "0",
+                        "lastModifiedDate": 1517324036000,
+                        "lastModifiedUser": 293,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "南有先生",
+                        "targetId": 11739,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1516088194000,
+                        "displayName": "#你看过最烂的一本书#",
+                        "id": 10027,
+                        "isHot": "0",
+                        "lastModifiedDate": 1516089095000,
+                        "lastModifiedUser": 252,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "#你看过最烂的一本书#",
+                        "targetId": 1,
+                        "topLevel": "0",
+                        "topicType": "0"
+                    },
+                    {
+                        "creationDate": 1515989963000,
+                        "displayName": "人邮读书",
+                        "id": 10022,
+                        "isHot": "0",
+                        "lastModifiedDate": 1516088337000,
+                        "lastModifiedUser": 252,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "人邮读书",
+                        "targetId": 10627,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1515989883000,
+                        "displayName": "当当精品书",
+                        "id": 10018,
+                        "isHot": "0",
+                        "lastModifiedDate": 1516088316000,
+                        "lastModifiedUser": 252,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "当当精品书",
+                        "targetId": 354,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1516088213000,
+                        "displayName": "#选一本书来表白#",
+                        "id": 10030,
+                        "isHot": "0",
+                        "lastModifiedDate": 1516088213000,
+                        "lastModifiedUser": 252,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "#选一本书来表白#",
+                        "targetId": 6,
+                        "topLevel": "0",
+                        "topicType": "0"
+                    },
+                    {
+                        "creationDate": 1516088186000,
+                        "displayName": "#你认为纸质书会消失吗？#",
+                        "id": 10026,
+                        "isHot": "0",
+                        "lastModifiedDate": 1516088186000,
+                        "lastModifiedUser": 252,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "#你认为纸质书会消失吗？#",
+                        "targetId": 9,
+                        "topLevel": "0",
+                        "topicType": "0"
+                    },
+                    {
+                        "creationDate": 1516088176000,
+                        "displayName": "#因为一本书，想去一个地方#",
+                        "id": 10025,
+                        "isHot": "0",
+                        "lastModifiedDate": 1516088176000,
+                        "lastModifiedUser": 252,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "#因为一本书，想去一个地方#",
+                        "targetId": 8,
+                        "topLevel": "0",
+                        "topicType": "0"
+                    },
+                    {
+                        "creationDate": 1515989975000,
+                        "displayName": "文心书吧",
+                        "id": 10023,
+                        "isHot": "0",
+                        "lastModifiedDate": 1515989975000,
+                        "lastModifiedUser": 261,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "文心书吧",
+                        "targetId": 11101,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    },
+                    {
+                        "creationDate": 1515989837000,
+                        "displayName": "华文天下频道",
+                        "id": 10014,
+                        "isHot": "0",
+                        "lastModifiedDate": 1515989837000,
+                        "lastModifiedUser": 261,
+                        "page": 0,
+                        "pageSize": 0,
+                        "realName": "华文天下频道",
+                        "targetId": 5107,
+                        "topLevel": "0",
+                        "topicType": "1"
+                    }
+                ],
+                "topicCnt": 1
+            }
+        }
+    },
+    {
+        "systemDate": 1522142432325,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522142432326",
+            "currentDate": "2018-03-27 17:20:32",
+            "digestList": [
+                {
+                    "channel": {
+                        "applyTimes": -4,
+                        "articlesNum": 7,
+                        "auditResult": "等待审核",
+                        "bookList": {
+                            "booklistId": 7802,
+                            "description": "总有一些人，他们妙语连珠，见解独到，思想深邃。但这一切你都无需羡慕，通过阅读，你也可以做到。",
+                            "imageUrl": "http://img63.ddimg.cn/pindaobeijingtu/6.jpg",
+                            "isShow": 1,
+                            "name": "读客熊猫君的书单"
+                        },
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 7085,
+                        "channelMonthlyStrategies": [],
+                        "channelOwner": {
+                            "ownerId": 670,
+                            "status": 2,
+                            "type": 1
+                        },
+                        "createDate": 1467188410000,
+                        "currentMonthlyNum": 0,
+                        "custId": 213055476,
+                        "description": "熊猫君的专场。用满地打滚的方式，推荐好得要死的书。",
+                        "digestNum": 7,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img60.ddimg.cn/digital/channel/57/90/36d4ac34734b4430b271a8b1286fe47f.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyDate": 1494917757000,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 670,
+                        "pageStatus": 1,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 13140,
+                        "title": "读客图书",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "459052:读客图书",
+                        "authorList": [
+                            {
+                                "authorId": 459052,
+                                "name": "读客图书"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "几代人都一样，一读古龙，就会热血沸腾！",
+                        "cardTitle": "90秒荐书丨他，直接影响了中文写作的方式",
+                        "clickCnt": 10,
+                        "createDate": 1522134641000,
+                        "createTime": 1522134641000,
+                        "creatorCustId": 213055476,
+                        "id": 1804933,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 0,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522134641000,
+                        "makeType": 0,
+                        "mediaId": 1900573900,
+                        "pic1Path": "http://img60.ddimg.cn/digital/channel/30/93/e607d3c830074c61a6db74fc0bd914e4.jpg",
+                        "replyCnt": 0,
+                        "showStartDate": 1522141800000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032715104007526,
+                        "title": "90秒荐书丨他，直接影响了中文写作的方式",
+                        "topCnt": 1,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 1,
+                        "channelOwner": 0,
+                        "createBar": false,
+                        "custId": 213055476,
+                        "custImg": "http://img7x8.ddimg.cn/imghead/8/20/5955867278468-1_e.png?1467187615510",
+                        "displayId": 5955867278468,
+                        "experience": 0,
+                        "gender": 0,
+                        "integral": 0,
+                        "introduct": "懒",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "读客熊猫君",
+                        "nickNameAll": "读客熊猫君",
+                        "pubCustId": "rWU87Av7rfosqY6KKA/Y2A=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 2,
+                        "articlesNum": 62,
+                        "auditResult": "等待审核",
+                        "bookList": {
+                            "booklistId": 15,
+                            "description": "书是人类进步的阶梯，书籍是造就灵魂的工具。",
+                            "imageUrl": "http://img60.ddimg.cn/digital/channel/65/86/0cd316bb297d4947844bdb0a41ac300d.jpg",
+                            "isShow": 1,
+                            "name": "书单来了"
+                        },
+                        "booklistNum": 1,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 21,
+                        "channelMonthlyStrategies": [],
+                        "channelOwner": {
+                            "ownerId": 21,
+                            "status": 2,
+                            "type": 2
+                        },
+                        "createDate": 1439006098000,
+                        "currentMonthlyNum": 0,
+                        "custId": 169648040,
+                        "description": "书籍是青年人不可分离的生活伴侣和导师。",
+                        "digestNum": 62,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img63.ddimg.cn/digital/channel/81/0/f30833e80a6746a582c9abb589c7a4fe.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyDate": 1459150231000,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 21,
+                        "pageStatus": 1,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 211967,
+                        "title": "书单部落",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "420095:书单君",
+                        "authorList": [
+                            {
+                                "authorId": 420095,
+                                "name": "书单君"
+                            }
+                        ],
+                        "bookIds": "1900770365,1900748191,1900774519,1900738611,1900782325",
+                        "bookNames": [
+                            "图说天下·文化中国：飞花令里读诗词",
+                            "中国诗词大会第二季(套装共2册)",
+                            "六神磊磊读唐诗",
+                            "孩子们的诗",
+                            "愿做长安一片月：全唐诗精读精析"
+                        ],
+                        "cardRemark": "近来，诗歌节目《中国诗词大会》《经典咏流传》深深打动着我们的心灵，诗歌《苔》第二天便传播了上亿次，高中生武亦姝用绝妙诗歌惊艳着我们。\r\n    读诗使人灵秀，一点也不假，书单君这为书友推荐6本书，愿爱读书的你，生出灵秀的气质来。",
+                        "cardTitle": "读诗使人灵秀，6本绝妙诗书为你添灵气",
+                        "clickCnt": 38,
+                        "createDate": 1522140192000,
+                        "createTime": 1522140192000,
+                        "creatorCustId": 169648040,
+                        "id": 1805038,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 0,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522140192000,
+                        "makeType": 0,
+                        "pic1Path": "http://img63.ddimg.cn/digital/channel/25/77/9c77a5c6e7ae40c5944d2076223326e3.jpg",
+                        "replyCnt": 0,
+                        "showStartDate": 1522140204000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032716430901136,
+                        "title": "读诗使人灵秀，6本绝妙诗书为你添灵气",
+                        "topCnt": 3,
+                        "type": 5,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 1,
+                        "createBar": false,
+                        "custId": 169648040,
+                        "custImg": "http://img37.ddimg.cn/imghead/93/12/9764334339897-1_e.png?1439644035767",
+                        "displayId": 9764334339897,
+                        "experience": 0,
+                        "gender": -1,
+                        "integral": 0,
+                        "introduct": "精分其实很正常",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "书单君",
+                        "nickNameAll": "书单君",
+                        "pubCustId": "2C/NHinpWf46F5NvHTgn/A=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 9,
+                        "articlesNum": 240,
+                        "auditDate": 1438833353000,
+                        "auditResult": "等待审核",
+                        "auditor": "sunleizhu",
+                        "bookList": {
+                            "booklistId": 6,
+                            "description": "看过100遍也还是爱不释手，念念不忘的好看小说～",
+                            "imageUrl": "http://img62.ddimg.cn/digital/channel/80/31/86b8cb46d5f5499a9b8f0de2b786c3b6.jpg",
+                            "isShow": 1,
+                            "name": "超好看的小说"
+                        },
+                        "booklistNum": 1,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 11,
+                        "channelMonthlyStrategies": [
+                            {
+                                "android": 2000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 3,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "一个月",
+                                "newPrice": 2000,
+                                "originalPrice": 4000,
+                                "platform": 1,
+                                "strategyDays": 30,
+                                "type": 30
+                            },
+                            {
+                                "android": 3000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 4,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "三个月",
+                                "newPrice": 3000,
+                                "originalPrice": 8000,
+                                "platform": 1,
+                                "strategyDays": 90,
+                                "type": 90
+                            },
+                            {
+                                "android": 5000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 5,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "六个月",
+                                "newPrice": 5000,
+                                "originalPrice": 12000,
+                                "platform": 1,
+                                "strategyDays": 180,
+                                "type": 180
+                            },
+                            {
+                                "android": 10000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 6,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "十二个月",
+                                "newPrice": 10000,
+                                "originalPrice": 24000,
+                                "platform": 1,
+                                "strategyDays": 360,
+                                "type": 360
+                            }
+                        ],
+                        "channelOwner": {
+                            "ownerId": 12,
+                            "status": 2,
+                            "type": 2
+                        },
+                        "createDate": 1438832381000,
+                        "currentMonthlyNum": 0,
+                        "custId": 175784150,
+                        "description": "超好看，没道理！",
+                        "digestNum": 251,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img60.ddimg.cn/digital/channel/10/78/260ee39afe2f41389b1b921a06220b0e.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyDate": 1447123902000,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 12,
+                        "pageStatus": 1,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 515573,
+                        "title": "最好看的小说",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "2724674:手绘君",
+                        "authorList": [
+                            {
+                                "authorId": 2724674,
+                                "name": "手绘君"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "小说君表示，这些画，太惊艳了…想沉睡在这个故事里，一醉不起。",
+                        "cardTitle": "国漫《鬼刀》画师作品集，沉醉了心灵，惊艳了时光",
+                        "clickCnt": 305,
+                        "createDate": 1522134451000,
+                        "createTime": 1522134451000,
+                        "creatorCustId": 175784150,
+                        "id": 1804929,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 1,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522134451000,
+                        "makeType": 0,
+                        "mediaId": 25248688,
+                        "pic1Path": "http://img61.ddimg.cn/digital/channel/10/86/7f61f9b8c77d4809b3bcbd4bf356e77e.jpg",
+                        "replyCnt": 21,
+                        "showStartDate": 1522135336000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032715072803444,
+                        "title": "国漫《鬼刀》画师作品集，沉醉了心灵，惊艳了时光",
+                        "topCnt": 21,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 0,
+                        "createBar": false,
+                        "custId": 175784150,
+                        "custImg": "http://img38.ddimg.cn/imghead/71/0/4877548720478-1_e.png?1449822950595",
+                        "displayId": 4877548720478,
+                        "experience": 0,
+                        "gender": -1,
+                        "integral": 0,
+                        "introduct": "",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "小说君",
+                        "nickNameAll": "小说君",
+                        "pubCustId": "HEP67NVXh8k6F5NvHTgn/A=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": -2,
+                        "articlesNum": 0,
+                        "auditResult": "等待审核",
+                        "bookList": {
+                            "booklistId": 11294,
+                            "isShow": 1
+                        },
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 7407,
+                        "channelMonthlyStrategies": [],
+                        "channelOwner": {
+                            "ownerId": 642,
+                            "status": 2,
+                            "type": 2
+                        },
+                        "createDate": 1468306789000,
+                        "currentMonthlyNum": 0,
+                        "custId": 214166394,
+                        "description": "微信公众号：顾一宸/ID：guyichen6。新浪微博：@顾一宸。写走心又走肾、有温度又有态度的文字",
+                        "digestNum": 0,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img62.ddimg.cn/digital/channel/96/3/091c71ee43dd46f5a639a8b035803866.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyDate": 1482549850000,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 642,
+                        "pageStatus": 0,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 6661,
+                        "title": "顾一宸",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "459731:顾一宸",
+                        "authorList": [
+                            {
+                                "authorId": 459731,
+                                "name": "顾一宸"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "为众人抱薪者，不可使其冻毙于风雪。为自由开路者，不可使其困顿于荆棘。为人民服务者，不可使其窘迫于生活。",
+                        "cardTitle": "“你们医生和老师就该无私奉献，凭什么多赚钱？”",
+                        "clickCnt": 220,
+                        "createDate": 1522118400000,
+                        "createTime": 1522118400000,
+                        "creatorCustId": 214166394,
+                        "id": 1804735,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 1,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522123231000,
+                        "makeType": 0,
+                        "mediaId": 25205167,
+                        "pic1Path": "http://img61.ddimg.cn/digital/channel/57/29/365032824af64166a3317fd567f4c156.jpg",
+                        "replyCnt": 17,
+                        "showStartDate": 1522134540000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032712003008961,
+                        "title": "“你们医生和老师就该无私奉献，凭什么多赚钱？”",
+                        "topCnt": 26,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 1,
+                        "createBar": false,
+                        "custId": 214166394,
+                        "custImg": "http://img7x1.ddimg.cn/imghead/25/9/9449831739571-1_e.png?1512886130307",
+                        "displayId": 9449831739571,
+                        "experience": 0,
+                        "gender": 0,
+                        "integral": 0,
+                        "introduct": "微信公众号：顾一宸。微博：@顾一宸。",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "顾一宸",
+                        "nickNameAll": "顾一宸",
+                        "pubCustId": "E4QGwpuVaWxwT0dhP5ziXQ=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 1,
+                        "articlesNum": 0,
+                        "auditResult": "等待审核",
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 12812,
+                        "channelMonthlyStrategies": [],
+                        "createDate": 1521523444000,
+                        "currentMonthlyNum": 0,
+                        "custId": 137809546,
+                        "description": "我是书海留踪",
+                        "digestNum": 0,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img60.ddimg.cn/digital/channel/29/51/28287b3717e34866a0ce30f331dbc3ec.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyTimes": 2,
+                        "monthlyType": 0,
+                        "pageStatus": 0,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 81,
+                        "title": "我写字带风",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "485531:书海留踪",
+                        "authorList": [
+                            {
+                                "authorId": 485531,
+                                "name": "书海留踪"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "平凡的许三观，他在时代的背景下是卑微而渺小的小人物，但在他家人的心目中，却是一位伟大的值得尊重的好父亲。",
+                        "cardTitle": "许三观卖血记｜为了救孩子他卖干了自己的最后一滴血",
+                        "clickCnt": 1059,
+                        "createDate": 1522067183000,
+                        "createTime": 1522067183000,
+                        "creatorCustId": 137809546,
+                        "id": 1804074,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 1,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522067183000,
+                        "makeType": 0,
+                        "mediaId": 25165143,
+                        "pic1Path": "http://img61.ddimg.cn/digital/channel/69/6/c909a2c1ef844abea523170cd45537c1.jpg",
+                        "replyCnt": 54,
+                        "showStartDate": 1522115396000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032620262005367,
+                        "title": "许三观卖血记｜为了救孩子他卖干了自己的最后一滴血",
+                        "topCnt": 79,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 0,
+                        "createBar": false,
+                        "custId": 137809546,
+                        "custImg": "http://img7x0.ddimg.cn/imghead/14/31/5076215621150-1_e.png?1521523639509",
+                        "displayId": 5076215621150,
+                        "experience": 0,
+                        "gender": 0,
+                        "integral": 0,
+                        "introduct": "我是书海，我写字带风。",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "书海留踪v",
+                        "nickNameAll": "书海留踪v",
+                        "pubCustId": "j0E0SDM6XIosqY6KKA/Y2A=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 1,
+                        "articlesNum": 25,
+                        "auditResult": "等待审核",
+                        "bookList": {
+                            "booklistId": 8907,
+                            "isShow": 1
+                        },
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 7157,
+                        "channelMonthlyStrategies": [],
+                        "channelOwner": {
+                            "ownerId": 634,
+                            "status": 2,
+                            "type": 2
+                        },
+                        "createDate": 1467351076000,
+                        "currentMonthlyNum": 0,
+                        "custId": 213203090,
+                        "description": "愿得我心如明月，独映寒夜迷途人",
+                        "digestNum": 25,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img62.ddimg.cn/digital/channel/98/72/526b04a9637c4aac806f58b6ff561a14.JPG",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 634,
+                        "pageStatus": 0,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 5626,
+                        "title": "剑圣喵大师",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "449160:剑圣喵大师",
+                        "authorList": [
+                            {
+                                "authorId": 449160,
+                                "name": "剑圣喵大师"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "是啊，所谓“师道尊严”，一旦尊严不存，何来师道？作为老师，我们从来都不怕学生的懒惰与迟钝。从来都不怕知识的枯燥与晦涩。",
+                        "cardTitle": "我为什么不想教育好你家孩子？",
+                        "clickCnt": 879,
+                        "createDate": 1522075933000,
+                        "createTime": 1522075933000,
+                        "creatorCustId": 213203090,
+                        "id": 1804242,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 1,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522076017000,
+                        "makeType": 0,
+                        "mediaId": 24247996,
+                        "pic1Path": "http://img61.ddimg.cn/digital/channel/94/49/0f4a03a856944a6799348ed555ab450d.jpg",
+                        "replyCnt": 38,
+                        "showStartDate": 1522115350000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032622533601011,
+                        "title": "我为什么不想教育好你家孩子？",
+                        "topCnt": 75,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 1,
+                        "createBar": false,
+                        "custId": 213203090,
+                        "custImg": "http://img7x7.ddimg.cn/imghead/10/33/9390777802867-1_e.png?1467355614766",
+                        "displayId": 9390777802867,
+                        "experience": 0,
+                        "gender": 0,
+                        "integral": 0,
+                        "introduct": "愿得我心如明月，独映寒夜迷途人",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "剑圣喵大师",
+                        "nickNameAll": "剑圣喵大师",
+                        "pubCustId": "9ixSeCAfndA6F5NvHTgn/A=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 1,
+                        "articlesNum": 0,
+                        "auditResult": "等待审核",
+                        "bookList": {
+                            "booklistId": 10090,
+                            "isShow": 1
+                        },
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 10389,
+                        "channelMonthlyStrategies": [],
+                        "createDate": 1489069620000,
+                        "currentMonthlyNum": 0,
+                        "custId": 25074505,
+                        "description": "分享青年学者的人生行旅，那些年读过的书，走过的路，遇见的人。",
+                        "digestNum": 0,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img60.ddimg.cn/digital/channel/1/53/59a5258e2f704eb2aff926f404a501cb.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "pageStatus": 0,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 416,
+                        "title": "阅读悦行",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "483619:海小侠",
+                        "authorList": [
+                            {
+                                "authorId": 483619,
+                                "name": "海小侠"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "她是见到喜欢的人会低到尘埃里开放的花，也是写出佳作受人追捧站在高处睥睨天下的王。",
+                        "cardTitle": "重读张爱玲：繁华落尽见真纯",
+                        "clickCnt": 582,
+                        "createDate": 1522113246000,
+                        "createTime": 1522113246000,
+                        "creatorCustId": 25074505,
+                        "id": 1804626,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 1,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522113246000,
+                        "makeType": 0,
+                        "mediaId": 23656014,
+                        "pic1Path": "http://img61.ddimg.cn/digital/channel/11/6/127ad213f60b4c4495309a86acc5ab1b.jpg",
+                        "replyCnt": 24,
+                        "showStartDate": 1522115328000,
+                        "showStartDateYmd": 1522080000000,
+                        "showStartDateYmdLong": 1522080000000,
+                        "showStartDateYmdString": "2018-03-27",
+                        "sortPage": 2018032709140403521,
+                        "title": "重读张爱玲：繁华落尽见真纯",
+                        "topCnt": 60,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 1,
+                        "channelOwner": 0,
+                        "createBar": false,
+                        "custId": 25074505,
+                        "custImg": "http://img37.ddimg.cn/imghead/51/19/6966866357007-1_e.png?1442885432921",
+                        "displayId": 6966866357007,
+                        "experience": 0,
+                        "gender": 1,
+                        "integral": 0,
+                        "introduct": "冬冬是个胆小鬼，怕风怕雨怕打雷。",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "海小侠",
+                        "nickNameAll": "海小侠",
+                        "pubCustId": "+bLGF4bvANNms6CjJdqf7w=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 1,
+                        "articlesNum": 4599,
+                        "auditResult": "等待审核",
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 1798,
+                        "channelMonthlyStrategies": [],
+                        "channelOwner": {
+                            "ownerId": 547,
+                            "status": 2,
+                            "type": 1
+                        },
+                        "createDate": 1449112864000,
+                        "currentMonthlyNum": 0,
+                        "custId": 184584667,
+                        "description": "翻篇儿APP，书有千页，只取一篇。",
+                        "digestNum": 4627,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img63.ddimg.cn/digital/channel/43/79/bc7383da5e994fcd9169757baf19df2d.png",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 547,
+                        "pageStatus": 1,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 54553,
+                        "title": "翻篇儿",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "309873:白茶",
+                        "authorList": [
+                            {
+                                "authorId": 309873,
+                                "name": "白茶"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "超级治愈的漫画《就喜欢你看不惯我，又干不掉我的样子！》，春节，看它，很有趣，很治愈！",
+                        "cardTitle": "就喜欢你看不惯我，又干不掉我的样子！巴扎黑篇",
+                        "cardType": 2,
+                        "clickCnt": 8250,
+                        "createDate": 1517479176000,
+                        "createTime": 1517479176000,
+                        "creatorCustId": 184584667,
+                        "dayOrNight": 0,
+                        "firstCatetoryId": 848,
+                        "firstCatetoryName": "漫画/动漫",
+                        "id": 1744305,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 0,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "lastUpdateDate": 1522064761000,
+                        "makeType": 0,
+                        "mediaChapterId": 76055917,
+                        "mediaId": 1900770297,
+                        "mediaName": "就喜欢你看不惯我 又干不掉我的样子(套装共2册)",
+                        "mood": 0,
+                        "operator": "dengpei",
+                        "pic1Path": "http://img60.ddimg.cn/digital/article/84/59/210d2763e13046f09bf9e8939b3f4a81.jpg",
+                        "replyCnt": 165,
+                        "reviewCnt": 19,
+                        "shareCnt": 3,
+                        "showStartDate": 1522064760000,
+                        "showStartDateYmd": 1521993600000,
+                        "showStartDateYmdLong": 1521993600000,
+                        "showStartDateYmdString": "2018-03-26",
+                        "signIds": "119:治愈;203:汪星人",
+                        "signList": [
+                            {
+                                "id": 119,
+                                "name": "治愈"
+                            },
+                            {
+                                "id": 203,
+                                "name": "汪星人"
+                            }
+                        ],
+                        "smallPic1Path": "",
+                        "smallPic2Path": "",
+                        "smallPic3Path": "",
+                        "sortPage": 2018032619460051637,
+                        "title": "就喜欢你看不惯我，又干不掉我的样子！巴扎黑篇",
+                        "topCnt": 416,
+                        "type": 1,
+                        "weight": 5
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 1,
+                        "createBar": false,
+                        "custId": 184584667,
+                        "custImg": "http://img33.ddimg.cn/imghead/15/28/2617075844673-1_e.png?1450164955973",
+                        "displayId": 2617075844673,
+                        "experience": 0,
+                        "gender": -1,
+                        "integral": 0,
+                        "introduct": "当当读书翻篇儿运营团队",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "翻篇儿团队",
+                        "nickNameAll": "翻篇儿团队",
+                        "pubCustId": "0AQR7hbix5J2GUrvQc6AKQ=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": -1,
+                        "articlesNum": 2,
+                        "auditDate": 1456391035000,
+                        "auditResult": "等待审核",
+                        "auditor": "sunhao",
+                        "bookList": {
+                            "booklistId": 5052,
+                            "description": "木心，1927年生于浙江桐乡乌镇东栅。本名孙璞，字仰中，号牧心，笔名木心。毕业于上海美术专科学校。",
+                            "imageUrl": "http://img60.ddimg.cn/digital/channel/36/85/4a91ae57ba07443196d9a16a15c33676.jpg",
+                            "isShow": 1,
+                            "name": "木心作品"
+                        },
+                        "booklistNum": 0,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 4585,
+                        "channelMonthlyStrategies": [],
+                        "channelOwner": {
+                            "ownerId": 592,
+                            "status": 2,
+                            "type": 1
+                        },
+                        "createDate": 1455789255000,
+                        "currentMonthlyNum": 0,
+                        "custId": 195130799,
+                        "description": "我们相信，每一种理想都是平等的，许许多多色彩斑斓的理想，将汇聚而成“理想国”。",
+                        "digestNum": 3,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img63.ddimg.cn/digital/channel/66/94/f4df457f8753410087c957d304cb2e10.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyDate": 1491036574000,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 592,
+                        "pageStatus": 1,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 2358,
+                        "title": "理想国imaginist",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "55721:蒋方舟",
+                        "authorList": [
+                            {
+                                "authorId": 55721,
+                                "name": "蒋方舟"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "我不敢给自己留点余地，我甚至不敢小声再小声地对自己说：“我累了，我不想再继续跑了。”",
+                        "cardTitle": "蒋方舟： 我为什么不敢“留点余地”",
+                        "clickCnt": 1819,
+                        "createDate": 1522059400000,
+                        "createTime": 1522059400000,
+                        "creatorCustId": 195130799,
+                        "id": 1803973,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 0,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522059400000,
+                        "makeType": 0,
+                        "mediaId": 1900506025,
+                        "pic1Path": "http://img63.ddimg.cn/digital/channel/95/73/28783623a4be4c6e8b96be6853707a32.jpg",
+                        "replyCnt": 57,
+                        "showStartDate": 1522062961000,
+                        "showStartDateYmd": 1521993600000,
+                        "showStartDateYmdLong": 1521993600000,
+                        "showStartDateYmdString": "2018-03-26",
+                        "sortPage": 2018032618163903858,
+                        "title": "蒋方舟： 我为什么不敢“留点余地”",
+                        "topCnt": 184,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 0,
+                        "createBar": false,
+                        "custId": 195130799,
+                        "custImg": "http://img7x0.ddimg.cn/imghead/53/32/9139566414680-1_e.png?1491040996563",
+                        "displayId": 9139566414680,
+                        "experience": 0,
+                        "gender": -1,
+                        "integral": 0,
+                        "introduct": "为了人与书地相遇",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "理想国时代",
+                        "nickNameAll": "理想国时代",
+                        "pubCustId": "+YKOOtP5R9dB7aIJorerUQ=="
+                    }
+                },
+                {
+                    "channel": {
+                        "applyTimes": 9,
+                        "articlesNum": 240,
+                        "auditDate": 1438833353000,
+                        "auditResult": "等待审核",
+                        "auditor": "sunleizhu",
+                        "bookList": {
+                            "booklistId": 6,
+                            "description": "看过100遍也还是爱不释手，念念不忘的好看小说～",
+                            "imageUrl": "http://img62.ddimg.cn/digital/channel/80/31/86b8cb46d5f5499a9b8f0de2b786c3b6.jpg",
+                            "isShow": 1,
+                            "name": "超好看的小说"
+                        },
+                        "booklistNum": 1,
+                        "booksNum": 0,
+                        "booksPrice": 0,
+                        "channelId": 11,
+                        "channelMonthlyStrategies": [
+                            {
+                                "android": 2000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 3,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "一个月",
+                                "newPrice": 2000,
+                                "originalPrice": 4000,
+                                "platform": 1,
+                                "strategyDays": 30,
+                                "type": 30
+                            },
+                            {
+                                "android": 3000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 4,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "三个月",
+                                "newPrice": 3000,
+                                "originalPrice": 8000,
+                                "platform": 1,
+                                "strategyDays": 90,
+                                "type": 90
+                            },
+                            {
+                                "android": 5000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 5,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "六个月",
+                                "newPrice": 5000,
+                                "originalPrice": 12000,
+                                "platform": 1,
+                                "strategyDays": 180,
+                                "type": 180
+                            },
+                            {
+                                "android": 10000,
+                                "channelId": 11,
+                                "iOSProductId": "",
+                                "id": 6,
+                                "ios": 0,
+                                "maxTimes": 0,
+                                "name": "十二个月",
+                                "newPrice": 10000,
+                                "originalPrice": 24000,
+                                "platform": 1,
+                                "strategyDays": 360,
+                                "type": 360
+                            }
+                        ],
+                        "channelOwner": {
+                            "ownerId": 12,
+                            "status": 2,
+                            "type": 2
+                        },
+                        "createDate": 1438832381000,
+                        "currentMonthlyNum": 0,
+                        "custId": 175784150,
+                        "description": "超好看，没道理！",
+                        "digestNum": 251,
+                        "hasBoughtMonthly": 0,
+                        "icon": "http://img60.ddimg.cn/digital/channel/10/78/260ee39afe2f41389b1b921a06220b0e.jpg",
+                        "isAllowMonthly": 0,
+                        "isCompleted": 1,
+                        "isMine": 0,
+                        "isRead": 0,
+                        "isSupportReward": 1,
+                        "modifyDate": 1447123902000,
+                        "modifyTimes": 0,
+                        "monthlyType": 0,
+                        "ownerId": 12,
+                        "pageStatus": 1,
+                        "shelfStatus": 1,
+                        "status": 0,
+                        "subNumber": 515573,
+                        "title": "最好看的小说",
+                        "totalBooksSoldNum": 0,
+                        "totalBooksSoldPrice": 0,
+                        "totalMonthlyNum": 0,
+                        "totalMonthlyPrice": 0
+                    },
+                    "digest": {
+                        "author": "283251:花火",
+                        "authorList": [
+                            {
+                                "authorId": 283251,
+                                "name": "花火"
+                            }
+                        ],
+                        "bookNames": [],
+                        "cardRemark": "今年最受关注的一部剧《南方有乔木》终于播出，陈伟霆、白百何、秦海璐、李现主演，点开优先看原著试读！",
+                        "cardTitle": "《南方有乔木》今年最受关注的剧终于播出！抢先看！",
+                        "clickCnt": 1447,
+                        "createDate": 1522062932000,
+                        "createTime": 1522062932000,
+                        "creatorCustId": 175784150,
+                        "id": 1804026,
+                        "isDel": 0,
+                        "isHomepageToAll": 1,
+                        "isPaperBook": 1,
+                        "isPraise": 0,
+                        "isShow": 1,
+                        "isSupportReward": 1,
+                        "lastUpdateDate": 1522062932000,
+                        "makeType": 0,
+                        "mediaId": 25185512,
+                        "pic1Path": "http://img60.ddimg.cn/digital/channel/54/44/50b711eda8f54ec99893a57695961d03.jpg",
+                        "replyCnt": 64,
+                        "showStartDate": 1522062960000,
+                        "showStartDateYmd": 1521993600000,
+                        "showStartDateYmdLong": 1521993600000,
+                        "showStartDateYmdString": "2018-03-26",
+                        "sortPage": 2018032619153102797,
+                        "title": "《南方有乔木》今年最受关注的剧终于播出！抢先看！",
+                        "topCnt": 148,
+                        "type": 3,
+                        "weight": 0
+                    },
+                    "user": {
+                        "barOwnerLevel": 0,
+                        "channelOwner": 0,
+                        "createBar": false,
+                        "custId": 175784150,
+                        "custImg": "http://img38.ddimg.cn/imghead/71/0/4877548720478-1_e.png?1449822950595",
+                        "displayId": 4877548720478,
+                        "experience": 0,
+                        "gender": -1,
+                        "integral": 0,
+                        "introduct": "",
+                        "isVip": 0,
+                        "level": 0,
+                        "nickName": "小说君",
+                        "nickNameAll": "小说君",
+                        "pubCustId": "HEP67NVXh8k6F5NvHTgn/A=="
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "systemDate": 1522142432875,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522142432876",
+            "currentDate": "2018-03-27 17:20:32",
+            "channels": [
+                {
+                    "channelId": 7085,
+                    "description": "熊猫君的专场。用满地打滚的方式，推荐好得要死的书。",
+                    "icon": "http://img60.ddimg.cn/digital/channel/57/90/36d4ac34734b4430b271a8b1286fe47f.jpg",
+                    "isSub": 0,
+                    "subNumber": 13140,
+                    "title": "读客图书"
+                },
+                {
+                    "channelId": 10621,
+                    "description": "每日一荐热门图书，给你最有营养的书\r\n",
+                    "icon": "http://img60.ddimg.cn/digital/channel/71/42/d373244172284bb79f5c79813d14fafc.png",
+                    "isSub": 0,
+                    "subNumber": 7628,
+                    "title": "博集新媒-你的营养书"
+                },
+                {
+                    "channelId": 1798,
+                    "description": "翻篇儿APP，书有千页，只取一篇。",
+                    "icon": "http://img63.ddimg.cn/digital/channel/43/79/bc7383da5e994fcd9169757baf19df2d.png",
+                    "isSub": 0,
+                    "subNumber": 54553,
+                    "title": "翻篇儿"
+                }
+            ]
+        }
+    },
+    {
+        "systemDate": 1522142435766,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522142435766",
+            "currentDate": "2018-03-27 17:20:35",
+            "saleList": [
+                {
+                    "isStore": 0,
+                    "isSupportFullBuy": 1,
+                    "mediaList": [
+                        {
+                            "audioAuthor": "",
+                            "authorPenname": "古龙",
+                            "avgStarLevel": 5.0,
+                            "categoryIds": "ZPJ",
+                            "categorys": "作品集",
+                            "channelHall": false,
+                            "chapterCnt": 1669,
+                            "commentNumber": 165,
+                            "coverPic": "http://img62.ddimg.cn/digital/product/39/0/1900573900_ii_cover.jpg?version=39e96196-4e89-4afa-8be8-f47cfde42b36",
+                            "creationDate": 1472799390000,
+                            "descs": "　◆作为当代华语文坛罕有的大师，古龙的作品是真正深入街头巷尾的文学经典。 　　◆***值得收藏的古龙文集。 　　◆大陆**合法授权华丽新版。◆古龙文集（**辑）限量上市！囊括《小李飞刀》系列、《楚留香新传》四部曲、《陆小凤传奇》七部曲、《七种武器》四部曲，以及《萧十一郎》《火并萧十一郎》！一次购齐过足瘾！古龙文集（第二辑套装）限量上市！囊括经典代表作《武林外史》《绝代双骄》《流星?蝴蝶?剑》《圆月弯刀》《欢乐英雄》《大人物》《三少爷的剑》《白玉老虎》《风铃中的刀声》《名剑风流》和江湖名篇系列《七星龙王》《碧血洗银枪》《绝不低头》《猎鹰?赌局》《血鹦鹉》《英雄无泪》《大地飞鹰》《彩环曲》《护花铃》《游侠录》《苍穹神剑》《月异星邪》《飘香剑雨》《剑毒梅香》《剑客行》《失魂引》！一次购齐过足瘾！",
+                            "editorRecommend": "",
+                            "isFull": 1,
+                            "isStore": 0,
+                            "lowestPrice": 49.99,
+                            "mediaId": 1900573900,
+                            "mediaType": 2,
+                            "originalPrice": 2326.9,
+                            "paperBookPrice": 232690,
+                            "price": 4999,
+                            "priceUnit": 1,
+                            "promotionList": [
+                                {
+                                    "promotionPrice": 49.99,
+                                    "stockStatus": 0
+                                }
+                            ],
+                            "recommandWords": "",
+                            "saleId": 1900573900,
+                            "salePrice": 49.99,
+                            "shelfStatus": 1,
+                            "subTitle": "几代人都一样，一读古龙就热血沸腾！大陆正版合法授权",
+                            "title": "古龙作品集(套装共72册)"
+                        }
+                    ],
+                    "saleId": 1900573900,
+                    "type": 0
+                }
+            ]
+        }
+    },
+    {
+        "systemDate": 1522142436160,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "total": 46,
+            "systemDate": "1522142436160",
+            "currentDate": "2018-03-27 17:20:36",
+            "widgetName": "大家都在看",
+            "mediaList": [
+                {
+                    "mediaId": 1900676689,
+                    "subTitle": "",
+                    "title": "一剪宋朝的时光",
+                    "saleId": 1900676689,
+                    "coverPic": "http://img60.ddimg.cn/digital/product/66/89/1900676689_ii_cover.jpg?version=null",
+                    "authorPenname": "白落梅",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900759193,
+                    "subTitle": "",
+                    "title": "隐秘花园",
+                    "saleId": 1900759193,
+                    "coverPic": "http://img60.ddimg.cn/digital/product/91/93/1900759193_ii_cover.jpg?version=null",
+                    "authorPenname": "王啸峰",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900273844,
+                    "subTitle": "",
+                    "title": "圣经故事",
+                    "saleId": 1900273844,
+                    "coverPic": "http://img61.ddimg.cn/digital/product/38/44/1900273844_ii_cover.jpg?version=null",
+                    "authorPenname": "Hendrik;Willem;Loon",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900695611,
+                    "subTitle": "",
+                    "title": "鄂国金佗稡编",
+                    "saleId": 1900695611,
+                    "coverPic": "http://img60.ddimg.cn/digital/product/56/11/1900695611_ii_cover.jpg?version=null",
+                    "authorPenname": "宋·岳珂",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900573632,
+                    "subTitle": "",
+                    "title": "天堂向左深圳往右",
+                    "saleId": 1900573632,
+                    "coverPic": "http://img61.ddimg.cn/digital/product/36/32/1900573632_ii_cover.jpg?version=null",
+                    "authorPenname": "慕容雪村",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900577007,
+                    "subTitle": "",
+                    "title": "鲁滨孙漂流记",
+                    "saleId": 1900577007,
+                    "coverPic": "http://img62.ddimg.cn/digital/product/70/7/1900577007_ii_cover.jpg?version=null",
+                    "authorPenname": "（英）笛福",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900759186,
+                    "subTitle": "",
+                    "title": "月食",
+                    "saleId": 1900759186,
+                    "coverPic": "http://img62.ddimg.cn/digital/product/91/86/1900759186_ii_cover.jpg?version=null",
+                    "authorPenname": "李国文",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900784120,
+                    "subTitle": "",
+                    "title": "一把手.2",
+                    "saleId": 1900784120,
+                    "coverPic": "http://img60.ddimg.cn/digital/product/41/20/1900784120_ii_cover.jpg?version=null",
+                    "authorPenname": "唐达天",
+                    "mediaType": 2
+                },
+                {
+                    "mediaId": 1900668384,
+                    "subTitle": "",
+                    "title": "迷恋：如何制造持久的吸引力(比引爆点更颠覆传统，比影响力更有深度)",
+                    "saleId": 1900668384,
+                    "coverPic": "http://img62.ddimg.cn/digital/product/83/84/1900668384_ii_cover.jpg?version=null",
+                    "authorPenname": "莎莉·霍格斯黑德",
+                    "mediaType": 2
+                }
+            ],
+            "timeCost": 422
+        }
+    },
+    {
+        "systemDate": 1522141887020,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522141887020",
+            "currentDate": "2018-03-27 17:11:27",
+            "missions": [
+                {
+                    "description": "签到test",
+                    "endTime": 1543571785000,
+                    "label": "签到test",
+                    "missionId": 86,
+                    "missionRecordStatus": 1,
+                    "missionType": 2,
+                    "rewardVoList": [
+                        {
+                            "count": 111,
+                            "index": 1,
+                            "label": "签到test",
+                            "type": 20,
+                            "unit": "积分,经验"
+                        }
+                    ],
+                    "startTime": 1509530182000,
+                    "targetUrl": "no_goto",
+                    "totalSteps": 1
+                }
+            ]
+        }
+    },
+    {
+        "systemDate": 1522141887020,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522141887020",
+            "currentDate": "2018-03-27 17:11:27",
+            "missions": [
+                {
+                    "description": "签到test",
+                    "endTime": 1543571785000,
+                    "label": "签到test",
+                    "missionId": 86,
+                    "missionRecordStatus": 1,
+                    "missionType": 2,
+                    "rewardVoList": [
+                        {
+                            "count": 111,
+                            "index": 1,
+                            "label": "签到test",
+                            "type": 20,
+                            "unit": "积分,经验"
+                        }
+                    ],
+                    "startTime": 1509530182000,
+                    "targetUrl": "no_goto",
+                    "totalSteps": 1
+                }
+            ]
+        }
+    },
+    {
+        "systemDate": 1522143790903,
+        "status": {
+            "code": 0
+        },
+        "data": {
+            "systemDate": "1522143790904",
+            "result": {
+                "getPublicationOrderFlow": {
+                    "systemDate": 1522143790892,
+                    "status": {
+                        "code": 0
+                    },
+                    "data": {
+                        "result": {
+                            "total": 0.99,
+                            "custCashUsed": 0.0,
+                            "succ": true,
+                            "couponAmount": 0.0,
+                            "remainBellCash": 977,
+                            "payableAmount": 0.5,
+                            "rechargeBellAmount": 0,
+                            "couponType": 0,
+                            "paymentPasswordEnabled": true,
+                            "giftCardMoneyUsed": 0.0,
+                            "orderList": [
+                                {
+                                    "total": 0,
+                                    "cartItems": [
+                                        {
+                                            "exchangeProductItems": [],
+                                            "promotionType": "207",
+                                            "orderSequenceId": "0_98",
+                                            "productMedium": 0,
+                                            "isPresale": false,
+                                            "dangdangPrice": 0.99,
+                                            "itemId": 607484172,
+                                            "productType": 98,
+                                            "discount": 3.81,
+                                            "productId": 1900364352,
+                                            "promotionId": 6114263,
+                                            "parentProductId": 0,
+                                            "productCount": 1,
+                                            "originalPrice": 0,
+                                            "isExchangeProduct": 0,
+                                            "vipPrice": 0.99,
+                                            "salePrice": 0.99,
+                                            "productName": "我是猫(电子书)"
+                                        }
+                                    ],
+                                    "custCashUsed": 0.0,
+                                    "orderShippingFee": 0.0,
+                                    "promotionType": 0,
+                                    "couponAmount": 0.0,
+                                    "orderSequenceId": "0_98",
+                                    "couponType": 0,
+                                    "orderType": 98,
+                                    "orderPromSubtract": 0,
+                                    "packageList": [
+                                        {
+                                            "total": 0.99,
+                                            "packageShippingFee": 0.0,
+                                            "isEbookOrder": 1,
+                                            "productList": [
+                                                {
+                                                    "isShipmentLimit": 0,
+                                                    "isVipDiscount": false,
+                                                    "isLimitBuy": false,
+                                                    "categoryId": 10005554,
+                                                    "isPresale": false,
+                                                    "isGiftProduct": false,
+                                                    "medium": 22,
+                                                    "productType": 98,
+                                                    "productId": "1900364352",
+                                                    "isHaveNoStock": false,
+                                                    "limitBuy": 0,
+                                                    "promotionId": 0,
+                                                    "activityId": 0,
+                                                    "parentProductId": 0,
+                                                    "promoModels": [
+                                                        {
+                                                            "promotionId": 6114263,
+                                                            "promotionType": 207,
+                                                            "promotionName": "此书参加电子书下单5折，立即购买",
+                                                            "deductionPrice": 0.49
+                                                        }
+                                                    ],
+                                                    "productCount": 1,
+                                                    "originalPrice": 26.0,
+                                                    "isExchangeProduct": false,
+                                                    "shopId": 0,
+                                                    "vipPrice": 0.99,
+                                                    "salePrice": 0.99,
+                                                    "isEbookProduct": true,
+                                                    "activityType": 0,
+                                                    "productName": "我是猫(电子书)"
+                                                }
+                                            ],
+                                            "packageId": "0",
+                                            "packagePayableAmount": 0.5,
+                                            "isEbook": true,
+                                            "packagePromoDiscountAmount": 0.0,
+                                            "packageBarginTotal": 0.0,
+                                            "orderId": "0"
+                                        }
+                                    ],
+                                    "couponNumber": "",
+                                    "orderPromoDiscountAmount": 0,
+                                    "sortNum": 1,
+                                    "remainGiftCard": 0.0,
+                                    "promotionId": 0,
+                                    "prodsLack": [],
+                                    "shippingFeePrem": 0,
+                                    "orderBarginTotal": 0.99,
+                                    "parentOrderId": 0,
+                                    "remainCash": 0.0,
+                                    "subtotalPrem": 0,
+                                    "orderPayableAmount": 0.5
+                                }
+                            ],
+                            "cartItemsCount": 1,
+                            "couponNumber": "",
+                            "hasCoupon": false,
+                            "statusCode": 0,
+                            "remainGiftCard": 0.0,
+                            "useCouponsItems": [],
+                            "errorCode": 0,
+                            "invoiceGroups": [],
+                            "giftCardUseType": "0",
+                            "barginTotal": 0.99,
+                            "isSetPaymentPassword": false,
+                            "promoDiscountAmount": 0.49
+                        },
+                        "systemDate": "1522143790892",
+                        "currentDate": "2018-03-27 17:43:10",
+                        "submitToken": "ed1713dae13542889470fc55c43510fe"
+                    }
+                },
+                "block": {
+                    "systemDate": 1522143789642,
+                    "status": {
+                        "code": 0
+                    },
+                    "data": {
+                        "systemDate": "1522143789642",
+                        "currentDate": "2018-03-27 17:43:09",
+                        "block": "{\r\n   \"instruction\" : \"1. 支付比例：1元=100铃铛；\\n2. iOS客户端与其他平台铃铛不通用，手机浏览器、电脑端、其他客户端平台铃铛通用；\\n3. 铃铛不能购买纸书；\\n4. 除iOS客户端以外，同一订单中，礼券、礼品卡、铃铛三者可同时使用，礼券不可叠加使用，礼品卡、移动积分卡不能同时使用；\\n5. 使用铃铛购买时，优先扣除赠送的银铃铛（有效期为30天），请在【个人中心】-【资产】-【铃铛】处查看余额及到期时间。\"\r\n}"
+                    }
+                },
+                "getCustAmount": {
+                    "systemDate": 1522143790006,
+                    "status": {
+                        "code": 0
+                    },
+                    "data": {
+                        "systemDate": "1522143790006",
+                        "cardAmount": "0",
+                        "currentDate": "2018-03-27 17:43:10",
+                        "cardAmountDetail": "{\"0\":{\"-1\":0,\"0\":0},\"1\":{\"-1\":0,\"0\":0}}"
+                    }
+                }
+            },
+            "currentDate": "2018-03-27 17:43:10"
+        }
+    }
+]
