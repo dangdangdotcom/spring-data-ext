@@ -1,4 +1,4 @@
-package com.dangdang.digital.redis;
+package com.dangdang.digital.spring.data.redis;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
@@ -12,6 +12,7 @@ import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.serializer.GenericToStringSerializer;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StopWatch;
 import redis.clients.jedis.JedisPoolConfig;
@@ -19,12 +20,11 @@ import redis.clients.jedis.JedisPoolConfig;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicLong;
 
 
 @SpringBootApplication
 public class Application {
-
-    private static final LZ4Serializer LZ4_SER = new LZ4Serializer();
 
     private static final Logger LOGGER = LogManager.getLogger( Application.class );
 
@@ -36,8 +36,8 @@ public class Application {
         jcf.setDatabase( 0 );
         jcf.setUsePool( true );
         JedisPoolConfig cfg = new JedisPoolConfig();
-        cfg.setMaxTotal( 100 );
-        cfg.setMaxIdle( 10 );
+        cfg.setMaxTotal( 256 );
+        cfg.setMaxIdle( 16 );
         jcf.setPoolConfig( cfg );
         return jcf;
     }
@@ -51,15 +51,35 @@ public class Application {
     }
 
     @Bean
+    public Stat stat() {
+        return new Stat();
+    }
+
+    public LZ4RedisSerializeDecorator lz4ser() {
+        RedisSerializer<Object> ser = new GenericToStringSerializer<Object>( Object.class );
+        Stat stat = stat();
+        return new LZ4RedisSerializeDecorator( ser, true, 1024 ) {
+            @Override
+            protected void onSerialize( boolean compressed, int srcLen, int compressedLen ) {
+                if ( compressed ) {
+                    stat.on( srcLen, compressedLen );
+                }
+            }
+        };
+    }
+
+    @Bean
     public RedisTemplate<String, Object> redisTemplateCompress() {
         final RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();
         template.setConnectionFactory( jedisConnectionFactory() );
-        template.setValueSerializer( LZ4_SER );
+        template.setValueSerializer( lz4ser() );
         return template;
     }
 
     public static void main( String[] args ) throws IOException, InterruptedException {
         ApplicationContext ctx = SpringApplication.run( Application.class, args );
+        Stat stat = ctx.getBean( Stat.class );
+
         ObjectMapper om = new ObjectMapper();
         List<Object> data = (List<Object>) om.readValue( new ClassPathResource( "data.json" ).getInputStream(), Object.class );
         for ( int i = 0; i < data.size(); i++ ) {
@@ -68,41 +88,41 @@ public class Application {
         }
 
         int opsNum = 1000;
-        int threadsNum = Runtime.getRuntime().availableProcessors() * 4;
+        int threadsNum = Runtime.getRuntime().availableProcessors() * 8;
 
         RedisTemplate<String, Object> rtNoCompress = (RedisTemplate<String, Object>) ctx.getBean( "redisTemplateNoCompress" );
         RedisTemplate<String, Object> rtCompress = (RedisTemplate<String, Object>) ctx.getBean( "redisTemplateCompress" );
 
         LOGGER.info( "Test GenericToStringSerializer(ST)..." );
-        test( data, rtNoCompress, opsNum );
-        LOGGER.info( "Test LZ4Serializer(ST)..." );
+        test( data, rtNoCompress, opsNum, "gts-test-" );
 
-        test( data, rtCompress, opsNum );
-        LZ4_SER.stat();
+        LOGGER.info( "Test LZ4RedisSerializeDecorator(ST,Fast)..." );
+        test( data, rtCompress, opsNum, "lz4-test-" );
+        stat.report();
 
-        LOGGER.info( "Test LZ4Serializer(MT), {} threads...", threadsNum );
+        LOGGER.info( "Test LZ4RedisSerializeDecorator(MT,Fast), {} threads...", threadsNum );
         CountDownLatch latch = new CountDownLatch( threadsNum );
         for ( int i = 0; i < threadsNum; i++ ) {
             new Thread( () -> {
-                test( data, rtCompress, opsNum );
+                test( data, rtCompress, opsNum, "lz4-test-" + Thread.currentThread().getId() + "-" );
                 latch.countDown();
             } ).start();
         }
         latch.await();
-        LZ4_SER.stat();
+        stat.report();
     }
 
-    private static void test( List<Object> data, RedisTemplate<String, Object> template, int opsNum ) {
+    private static void test( List<Object> data, RedisTemplate<String, Object> template, int opsNum, String keyPrefix ) {
         StopWatch watch = new StopWatch();
         watch.start();
         ValueOperations<String, Object> ops = template.opsForValue();
         for ( int i = 0; i < opsNum; i++ ) {
             try {
-                String key = "lz4-test-" + i;
+                String key = keyPrefix + i;
                 String value = (String) data.get( i % data.size() );
                 ops.set( key, value );
                 if ( !ObjectUtils.nullSafeEquals( value, ops.get( key ) ) ) {
-                    throw new RuntimeException( "LZ4Serializer defect" );
+                    throw new RuntimeException( "LZ4RedisSerializeDecorator defect" );
                 }
             } catch ( Throwable t ) {
                 LOGGER.error( t.getMessage(), t );
@@ -110,5 +130,27 @@ public class Application {
         }
         watch.stop();
         LOGGER.info( "Time elapsed: {}s", watch.getTotalTimeSeconds() );
+    }
+
+    private static class Stat {
+
+        private AtomicLong totalDecompressedLen = new AtomicLong( 0 );
+
+        private AtomicLong totalCompressedLen = new AtomicLong( 0 );
+
+        public synchronized void on( int srcLen, int compressedLen ) {
+            totalDecompressedLen.getAndAdd( srcLen );
+            totalCompressedLen.getAndAdd( compressedLen );
+        }
+
+        public synchronized void report() {
+            long cl = totalCompressedLen.get();
+            long dl = totalDecompressedLen.get();
+            LOGGER.info( "\nTotal compressed length: {}\nTotal decompressed length:{}\nTotal ratio: {}",
+                cl, dl, Double.valueOf( dl ) / Double.valueOf( cl )
+            );
+            totalCompressedLen.set( 0 );
+            totalDecompressedLen.set( 0 );
+        }
     }
 }

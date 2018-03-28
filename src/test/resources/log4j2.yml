@@ -11,7 +11,7 @@ Configuration:
   Loggers:
     logger:
       -
-        name: com.dangdang.digital.redis
+        name: com.dangdang.digital.spring.data.redis
         level: info
         additivity: false
         AppenderRef:
