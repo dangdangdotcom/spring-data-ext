@@ -77,13 +77,18 @@ public class LZ4RedisSerializeDecorator<T> implements RedisSerializer<T> {
         boolean noCompressed = srcBuf.array()[0] < 0;
         if ( noCompressed ) {
             byte[] destBytes = Arrays.copyOfRange( src, 1, src.length );
+            onDeserialize( false, destBytes.length, destBytes.length );
             return serializer.deserialize( destBytes );
         } else {
             int destLen = srcBuf.getInt();
             byte[] destBytes = new byte[destLen];
             decompressor.decompress( src, srcBuf.position(), destBytes, 0, destLen );
+            onDeserialize( true, destLen, src.length );
             return serializer.deserialize( destBytes );
         }
+    }
+
+    protected void onDeserialize( boolean compressed, int srcLen, int compressedLen ) {
     }
 
     protected void onSerialize( boolean compressed, int srcLen, int compressedLen ) {
