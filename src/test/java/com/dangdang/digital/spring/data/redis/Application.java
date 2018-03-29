@@ -96,7 +96,7 @@ public class Application implements ApplicationRunner {
             ser = new JdkSerializationRedisSerializer();
         }
         Stat stat = stat();
-        return new LZ4RedisSerializeDecorator( ser, true, 1024 ) {
+        return new LZ4RedisSerializeDecorator( ser, fastMode, 1024 ) {
             @Override
             protected void onSerialize( boolean compressed, int srcLen, int compressedLen ) {
                 stat.onCompress( compressed, srcLen, compressedLen );
