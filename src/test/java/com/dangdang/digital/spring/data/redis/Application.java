@@ -15,6 +15,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.GenericToStringSerializer;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializer;
@@ -51,8 +52,13 @@ public class Application implements ApplicationRunner {
     @Value( "${sleep:0}" )
     private long sleep;
 
+    @Value( "${readonly:true}" )
+    private boolean readonly;
+
     @Autowired
     private ApplicationContext ctx;
+
+    private List<Object> data;
 
     @Bean
     JedisConnectionFactory jedisConnectionFactory() {
@@ -73,7 +79,7 @@ public class Application implements ApplicationRunner {
     public RedisTemplate<String, Object> redisTemplateNoCompress() {
         RedisSerializer<Object> ser = null;
         if ( jsonify ) {
-            ser = new GenericToStringSerializer( Object.class );
+            ser = new GenericJackson2JsonRedisSerializer();
         } else {
             ser = new JdkSerializationRedisSerializer();
         }
@@ -91,7 +97,7 @@ public class Application implements ApplicationRunner {
     public LZ4RedisSerializeDecorator lz4ser() {
         RedisSerializer<Object> ser = null;
         if ( jsonify ) {
-            ser = new GenericToStringSerializer( Object.class );
+            ser = new GenericJackson2JsonRedisSerializer();
         } else {
             ser = new JdkSerializationRedisSerializer();
         }
@@ -132,69 +138,108 @@ public class Application implements ApplicationRunner {
 
         Stat stat = ctx.getBean( Stat.class );
 
-        ObjectMapper om = new ObjectMapper();
-        List<Object> data;
-        data = (List<Object>) om.readValue( new ClassPathResource( "data.json" ).getInputStream(), Object.class );
-        if ( jsonify ) {
-            for ( int i = 0; i < data.size(); i++ ) {
-                String json = om.writeValueAsString( data.get( i ) );
-                data.set( i, json );
-            }
-        }
-        RedisTemplate<String, Object> rtNoCompress = (RedisTemplate<String, Object>) ctx.getBean( "redisTemplateNoCompress" );
-        RedisTemplate<String, Object> rtCompress = (RedisTemplate<String, Object>) ctx.getBean( "redisTemplateCompress" );
+        data = prepareData();
 
+        if ( !readonly ) {
+            testReadWriteST( false );
+            testReadWriteST( true );
+            testReadWriteMT( false );
+            testReadWriteMT( true );
+        }
+        testReadST( false );
+        testReadST( true );
+        testReadMT( false );
+        testReadMT( true );
+    }
+
+    private void testReadST( boolean compress ) {
         StopWatch watch = new StopWatch();
         watch.start();
-        LOGGER.info( "TEST R/W JdkSerializationRedisSerializer..." );
-        test( data, rtNoCompress, opsNum, "sde-test-jsrs-" );
+        String key = "sde-test-st-r";
+        RedisTemplate<String, Object> template = compress ? redisTemplateCompress() : redisTemplateNoCompress();
+        template.opsForValue().set( key, data.get( data.size() - 1 ) );
+        LOGGER.info( "TEST R {}, single threads...", getSerName( template ) );
+        singleThreadGet( key, template );
         watch.stop();
-        LOGGER.info( "Time elapsed: {}s", watch.getTotalTimeSeconds() );
+        LOGGER.info( "Time elapsed: {}s, QPS: {}", watch.getTotalTimeSeconds(), opsNum / watch.getTotalTimeSeconds() );
+        if ( compress ) stat().report();
+    }
 
+
+    private void testReadMT( boolean compress ) throws Exception {
+        StopWatch watch = new StopWatch();
         watch.start();
-        LOGGER.info( "TEST R/W LZ4RedisSerializeDecorator(ST/{}) ...", getLz4Mode() );
-        test( data, rtCompress, opsNum, "sde-test-lz4-" );
+        String key = "sde-test-mt-r";
+        RedisTemplate<String, Object> template = compress ? redisTemplateCompress() : redisTemplateNoCompress();
+        template.opsForValue().set( key, data.get( data.size() - 1 ) );
+        CountDownLatch latch = new CountDownLatch( threadsNum );
+        LOGGER.info( "TEST R {}, {} threads...", getSerName( template ), threadsNum );
+        for ( int i = 0; i < threadsNum; i++ ) {
+            new Thread( () -> {
+                singleThreadGet( key, template );
+                latch.countDown();
+            } ).start();
+        }
+        latch.await();
         watch.stop();
-        LOGGER.info( "Time elapsed: {}s", watch.getTotalTimeSeconds() );
-        stat.report();
+        LOGGER.info( "Time elapsed: {}s, QPS: {}", watch.getTotalTimeSeconds(), opsNum * threadsNum / watch.getTotalTimeSeconds() );
+        if ( compress ) stat().report();
+    }
 
+    private void singleThreadGet( String key, RedisTemplate<String, Object> template ) {
+        for ( int j = 0; j < opsNum; j++ ) {
+            try {
+                template.opsForValue().get( key );
+                if ( sleep > 0 ) TimeUnit.MILLISECONDS.sleep( sleep );
+            } catch ( Throwable t ) {
+                LOGGER.error( t.getMessage(), t );
+            }
+        }
+    }
+
+    private void testReadWriteMT( boolean compress ) throws Exception {
+        StopWatch watch = new StopWatch();
         watch.start();
-        LOGGER.info( "TEST R/W LZ4RedisSerializeDecorator(MT/{}), {} threads...", getLz4Mode(), threadsNum );
-        CountDownLatch latch0 = new CountDownLatch( threadsNum );
+        RedisTemplate<String, Object> template = compress ? redisTemplateCompress() : redisTemplateNoCompress();
+        LOGGER.info( "TEST R/W {}, {} threads...", getSerName( template ), threadsNum );
+        CountDownLatch latch = new CountDownLatch( threadsNum );
         for ( int i = 0; i < threadsNum; i++ ) {
             final String threadName = String.valueOf( i );
             new Thread( () -> {
-                test( data, rtCompress, opsNum, "sde-test-lz4-mt" + threadName + "-" );
-                latch0.countDown();
+                test( data, template, opsNum, "sde-test-mt-rw" + threadName + "-" );
+                latch.countDown();
             } ).start();
         }
-        latch0.await();
+        latch.await();
         watch.stop();
         LOGGER.info( "Time elapsed: {}s", watch.getTotalTimeSeconds() );
-        stat.report();
+        if ( compress ) stat().report();
+    }
 
+    private void testReadWriteST( boolean compress ) {
+        StopWatch watch = new StopWatch();
         watch.start();
-        String keyForBigdata = "sde-test-lz4-mt-r";
-        rtCompress.opsForValue().set( keyForBigdata, data.get( data.size() - 1 ) );
-        CountDownLatch latch1 = new CountDownLatch( threadsNum );
-        LOGGER.info( "TEST R LZ4RedisSerializeDecorator(MT/{}), {} threads...", getLz4Mode(), threadsNum );
-        for ( int i = 0; i < threadsNum; i++ ) {
-            new Thread( () -> {
-                for ( int j = 0; j < opsNum; j++ ) {
-                    try {
-                        rtCompress.opsForValue().get( keyForBigdata );
-                        if ( sleep > 0 ) TimeUnit.MILLISECONDS.sleep( sleep );
-                    } catch ( Throwable t ) {
-                        LOGGER.error( t.getMessage(), t );
-                    }
-                }
-                latch1.countDown();
-            } ).start();
-        }
-        latch1.await();
+        RedisTemplate<String, Object> template = compress ? redisTemplateCompress() : redisTemplateNoCompress();
+        LOGGER.info( "TEST R/W {} ...", getSerName( template ) );
+        test( data, redisTemplateCompress(), opsNum, "sde-test-st-rw" );
         watch.stop();
         LOGGER.info( "Time elapsed: {}s", watch.getTotalTimeSeconds() );
-        stat.report();
+        stat().report();
+    }
+
+    private String getSerName( RedisTemplate<String, Object> template ) {
+        RedisSerializer<?> vs = template.getValueSerializer();
+        if ( vs instanceof LZ4RedisSerializeDecorator ) {
+            return LZ4RedisSerializeDecorator.class.getSimpleName();
+        }
+        return vs.getClass().getSimpleName();
+    }
+
+    private List<Object> prepareData() throws java.io.IOException {
+        ObjectMapper om = new ObjectMapper();
+        List<Object> data;
+        data = (List<Object>) om.readValue( new ClassPathResource( "data.json" ).getInputStream(), Object.class );
+        return data;
     }
 
     private void test( List<Object> data, RedisTemplate<String, Object> template, int opsNum, String keyPrefix ) {
@@ -213,10 +258,6 @@ public class Application implements ApplicationRunner {
                 LOGGER.error( t.getMessage(), t );
             }
         }
-    }
-
-    public String getLz4Mode() {
-        return fastMode ? "FAST" : "HC";
     }
 
     private class Stat {
